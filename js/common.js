@@ -15,6 +15,15 @@ const subTotal = document.querySelector('#sub-total-amount');
 const tax = document.querySelector('#tax-amount');
 const finalTotal = document.querySelector('#final-total');
 
+//============> Extra Work Remove item
+const closeItemPhone = document.querySelector('#close-btn-phone');
+const closeItemCase = document.querySelector('#close-btn-case');
+const cartItemPhone = document.querySelector('#cart-item-phone');
+const cartItemCase = document.querySelector('#cart-item-case');
+
+
+
+
 //==============> common function
 // Calculate Subtotal function
 const getTotalValue = function (element) {
@@ -126,5 +135,13 @@ btnCaseMinus.addEventListener('click', function () {
 
 });
 
+//========> Function Close Button
 
+closeItemPhone.addEventListener('click', function () {
+    cartItemPhone.style.display = 'none';
+});
+
+closeItemCase.addEventListener('click', function () {
+    cartItemCase.style.display = 'none';
+});
 

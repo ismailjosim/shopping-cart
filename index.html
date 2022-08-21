@@ -22,7 +22,7 @@
 				<h2>My shopping cart</h2>
 				<div class="cart">
 					<div class="col-md-12 col-lg-10 mx-auto">
-						<div class="cart-item">
+						<div id="cart-item-phone" class="cart-item">
 							<div class="row">
 								<div class="col-md-7 center-item">
 									<img src="images/product-1.png" alt="" />
@@ -45,12 +45,17 @@
 										</button>
 									</div>
 									<h5>$<span id="phone-total">1219</span></h5>
-									<img src="images/remove.png" alt="" class="remove-item" />
+									<img
+										src="images/remove.png"
+										alt=""
+										class="remove-item"
+										id="close-btn-phone"
+									/>
 								</div>
 							</div>
 						</div>
 
-						<div class="cart-item">
+						<div id="cart-item-case" class="cart-item">
 							<div class="row">
 								<div class="col-md-7 center-item mx-auto">
 									<img src="images/product-2.png" alt="" />
@@ -73,7 +78,12 @@
 										</button>
 									</div>
 									<h5>$<span id="case-total">59</span></h5>
-									<img src="images/remove.png" alt="" class="remove-item" />
+									<img
+										src="images/remove.png"
+										alt=""
+										class="remove-item"
+										id="close-btn-case"
+									/>
 								</div>
 							</div>
 						</div>
@@ -102,6 +112,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- script file Added -->
 		<script src="js/case.js"></script>
 		<script src="js/phone.js"></script>
 		<script src="js/common.js"></script>
